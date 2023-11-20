@@ -1,0 +1,66 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^home$ /home.php [NC,L]
+  RewriteRule ^sobre$ /sobre.php [NC,L]
+  RewriteRule ^noticias$ /noticias.php [NC,L]
+  RewriteRule ^mural$ /mural.php [NC,L]
+  RewriteRule ^programacao$ /programacao.php [NC,L]
+  RewriteRule ^eventos$ /eventos.php [NC,L]
+  RewriteRule ^fotos$ /fotos.php [NC,L]
+  RewriteRule ^videos$ /videos.php [NC,L]
+  RewriteRule ^equipe$ /equipe.php [NC,L]
+  RewriteRule ^contato$ /contato.php [NC,L]
+  
+  RewriteRule ^blog-page-([^-]*)$ blog.php?page=$1                            
+  RewriteRule ^blog-([^-]*)+? blog.php?d=$1 [L]
+
+  RewriteRule ^news-page-([^-]*)$ noticias.php?page=$1                            
+  RewriteRule ^news-([^-]*)+? noticias.php?d=$1 [L]
+
+  RewriteRule ^videos-page-([^-]*)$ videos.php?page=$1                            
+  RewriteRule ^videos-([^-]*)+? videos.php?d=$1 [L]
+
+  RewriteRule ^eventos-page-([^-]*)$ eventos.php?page=$1                            
+  RewriteRule ^eventos-([^-]*)+? eventos.php?d=$1 [L]
+
+</IfModule>
+
+ErrorDocument 404 "<script>location.href='/'</script>"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ErrorDocument 404 /404.php
